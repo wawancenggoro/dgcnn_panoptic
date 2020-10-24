@@ -54,13 +54,11 @@ for filename in ['C_38FN1.las']:
         range_y_min_full = range_y_min
         #looping block sepanjang axis y
         for i in range(dist_y):
-            print(i)
             range_y_min_range = range_y_min_full
             range_y_min_full = range_y_min_range + range_y
             range_x_min_full = range_x_min
             #looping block sepanjang axis x
             for j in range(dist_x):
-                print(j)
                 range_x_min_range = range_x_min_full
                 range_x_min_full = range_x_min_range + range_x
                 if points_x[y] <= range_x_min_full and points_x[y] > range_x_min_range and points_y[y] <= range_y_min_full and points_y[y] > range_y_min_range:
